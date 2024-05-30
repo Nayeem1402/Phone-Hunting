@@ -1,23 +1,62 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" , data-theme="cupcake">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+
+    7
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.11.1/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+
+
 </head>
+
 <body>
     <header>
-
+        <h4 class="text-6xl">Hunting Phone </h4>
     </header>
 
     <main>
+        <!-- serch secttion  -->
 
+        <div class="container mx-auto"> 
+            <input id="search-fild" type="text" placeholder="Type here"  class="input input-bordered input-md w-full max-w-xs" />
+            
+                <button onclick="handleScarch()" class="btn btn-accent">SEARCH</button>
+            
+        </div>
+
+
+
+        <!-- card section  -->
+        <section class="container mx-auto">
+            <!-- card 1 -->
+            <div id="phone-container" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+                <!-- <div class="card w-96 bg-base-100 shadow-xl">
+                        <figure class="px-10 pt-10">
+                            <img src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg" alt="Shoes"
+                                class="rounded-xl" />
+                        </figure>
+                        <div class="card-body items-center text-center">
+                            <h2 class="card-title">Shoes!</h2>
+                            <p>If a dog chews shoes whose shoes does he choose?</p>
+                            <div class="card-actions">
+                                <button class="btn btn-primary">Buy Now</button>
+                            </div>
+                        </div>
+                    </div> -->
+            </div>
+        </section>
     </main>
 
     <footer>
 
     </footer>
 
-    <script src="./js/index.js"></script>
+    <script src="./js/phone.js"></script>
 </body>
+
 </html>
