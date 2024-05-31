@@ -29,10 +29,17 @@
             
         </div>
 
+        
 
 
         <!-- card section  -->
-        <section class="container mx-auto">
+        <section class="container mx-auto  ">
+
+            <!-- lading section  -->
+            <div id="loding-spinner" class="flex justify-center hidden mt-40n">
+                <span id="" class="loading  loading-spinner loading-lg "></span>
+            </div>
+
             <!-- card 1 -->
             <div id="phone-container" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
                 <!-- <div class="card w-96 bg-base-100 shadow-xl">
@@ -50,6 +57,13 @@
                     </div> -->
             </div>
         </section>
+        
+        <!-- show all button  -->
+
+        <div id="show-all-container" class="hidden text-center my-10 container mx-auto">
+            <button onclick="handleShowAll()" class="btn btn-active text-xl btn-neutral">Show all</button>
+        </div>
+
     </main>
 
     <footer>
