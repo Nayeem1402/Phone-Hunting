@@ -6,30 +6,70 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 
-    7
+
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.11.1/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
 
-
+    <link rel="stylesheet" href="style.css">
 
 </head>
 
-<body>
-    <header>
-        <h4 class="text-6xl">Hunting Phone </h4>
+<body class="  poopins">
+    <header class="px-5 mt-5 md:px-12 mt-6 lg:px-36 mt-10">
+        <div class="navbar bg-base-100 font-bold">
+            <div class="flex-1">
+                <a class="btn btn-ghost text-2xl  font-extrabold">Hot Gadgets</a>
+            </div>
+            <div class="flex-none ">
+
+                <button class="btn text-xl  text-white bg-[#0D6EFD] rounded-xl py  ">Sing up</button>
+
+            </div>
+        </div>
     </header>
 
-    <main>
+    <main class="px-5 md:px-12 lg:px-36">
+
+        <!-- apple iphone 13 section  -->
+
+        <section>
+            <div class="text-center">
+                <h1 class="text-6xl font-bold my-5">Apple Iphone 13 Pro Max</h1>
+
+                <p>Ceramic Shield front
+                    Textured matte
+                    glass back <br>and
+                    stainless steel design</p>
+            </div>
+
+            <div class=" flex justify-center ">
+
+                <button class="btn text-xl my-5 text-white bg-[#0D6EFD] rounded-xl ">Bye Now</button>
+
+            </div>
+
+            <div class="flex justify-center">
+                <img src="./images/iphone-13-pro-max-family-e1631775232920-removebg-preview.png" alt="">
+            </div>
+        </section>
+
+
+
         <!-- serch secttion  -->
 
-        <div class="container mx-auto"> 
-            <input id="search-fild" type="text" placeholder="Type here"  class="input input-bordered input-md w-full max-w-xs" />
-            
-                <button onclick="handleScarch()" class="btn btn-accent">SEARCH</button>
-            
+        <h1 class="font-semibold text-4xl text-center mt-[120px] my-8">Search your phone</h1>
+
+        <div class="container flex justify-center  ">
+            <div class="flex">
+                <input id="search-fild" type="text" placeholder="Type here"
+                    class="input input-bordered input-md   max-w-xl lg:min-w-[700px]" />
+
+                <button onclick="handleScarch()" class="btn text-white bg-[#0D6EFD] rounded-xl  btn-accent">SEARCH</button>
+            </div>
+
         </div>
 
-        
+
 
 
         <!-- card section  -->
@@ -41,7 +81,7 @@
             </div>
 
             <!-- card 1 -->
-            <div id="phone-container" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+            <div id="phone-container" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 mb-10 gap-4">
                 <!-- <div class="card w-96 bg-base-100 shadow-xl">
                         <figure class="px-10 pt-10">
                             <img src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg" alt="Shoes"
@@ -57,16 +97,98 @@
                     </div> -->
             </div>
         </section>
-        
+
         <!-- show all button  -->
 
         <div id="show-all-container" class="hidden text-center my-10 container mx-auto">
-            <button onclick="handleShowAll()" class="btn btn-active text-xl btn-neutral">Show all</button>
+            <button onclick="handleShowAll()" class="btn btn-active text-xl  text-white bg-[#0D6EFD] rounded-xl ">Show all</button>
         </div>
+
+
+
+        <!-- show modal  -->
+
+        <!-- Open the modal using ID.showModal() method -->
+
+        <dialog id="show_details_modal" class="modal modal-bottom sm:modal-middle">
+            <div class="modal-box">
+                <h3 id="show-details-phone-name" class="font-bold text-lg"> </h3>
+                <div id="show-details-container">
+                    <div class="flex justify-center">
+                         
+                    </div>
+                </div>
+                <p class="py-4 ">Press ESC key or click the button below to close</p>
+                <div class="modal-action">
+                    <form method="dialog">
+                        <!-- if there is a button in form, it will close the modal -->
+                        <button class="btn">Close</button>
+                    </form>
+                </div>
+            </div>
+        </dialog>
+
+
+
+
 
     </main>
 
-    <footer>
+    <footer class="footer flex justify-center  flex-col p-10 bg-[#0D6EFD0D] 
+    text-base-content sm:text-center lg:px-36">
+
+        <div class="flex flex-col items-center justify-between w-full lg:flex-row">
+
+            <div>
+                <h1 class="font-extrabold text-3xl text-center lg:text-5xl ">Hot Gadgets</h1>
+                <br>
+                <p class="font-semibold text-xl text-[#706F6F]">it can be your first choose.</p>
+            </div>
+           <div class="flex flex-col items-center gap-5 lg:flex-row">
+            <div class="flex gap-3">
+                <img src="./images/icons8-facebook-48.png" alt="">
+                <img src="./images/icons8-instagram-48.png" alt="">
+                <img src="./images/icons8-twitter-48.png" alt="">
+                
+            </div>
+            <div>
+                <button class="btn text-white bg-[#0D6EFD] rounded-xl font-bold text-xl btn-accent">Join Premium</button>
+            </div>
+           </div>
+        </div>
+
+        <hr class="border-dotted border-2 min-w-full border-gray-300">
+        <div class="flex gap-y-10 w-full justify-around flex-col text-center sm:flex-row lg:flex-row ">
+
+            <nav class="flex justify-center mx-auto flex-col">
+                <div class="flex flex-col gap-y-3">
+                    <h6 class="footer-title font-bold text-[20px]">Services</h6>
+                    <a class="link link-hover">Branding</a>
+                    <a class="link link-hover">Design</a>
+                    <a class="link link-hover">Marketing</a>
+                    <a class="link link-hover">Advertisement</a>
+                </div>
+            </nav>
+            <nav class="flex justify-center mx-auto flex-col">
+                <div class="flex flex-col gap-y-3">
+                    <h6 class="footer-title font-bold text-[20px]">Company</h6>
+                    <a class="link link-hover">About us</a>
+                    <a class="link link-hover">Contact</a>
+                    <a class="link link-hover">Jobs</a>
+                    <a class="link link-hover">Press kit</a>
+                </div>
+
+            </nav>
+            <nav class="flex justify-center mx-auto flex-col">
+                <div class="flex flex-col gap-y-3">
+                    <h6 class="footer-title font-bold text-[20px]">Legal</h6>
+                    <a class="link link-hover">Terms of use</a>
+                    <a class="link link-hover">Privacy policy</a>
+                    <a class="link link-hover">Cookie policy</a>
+                </div>
+
+            </nav>
+        </div>
 
     </footer>
 
